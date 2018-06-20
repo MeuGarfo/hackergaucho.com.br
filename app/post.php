@@ -1,6 +1,6 @@
 <?php
 require 'inc/mb_ucfirst.php';
-$content=mb_ucfirst(file_get_contents($filename));
+$content=file_get_contents($filename);
 if($categoria=='blog'){
     $content=explode(PHP_EOL,$content);
     $data=$content[0];
@@ -18,6 +18,7 @@ if($post){
         $string.='<p><small>'.date('d.M.Y h:i:s A',$data).'</small></p>';
     }
     $content=$string.$content;
+    $content=mb_ucfirst($content);
     require 'layout.php';
 }else{
 
