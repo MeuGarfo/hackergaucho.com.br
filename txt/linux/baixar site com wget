@@ -1,0 +1,9 @@
+Para baixar um site com wget execute o seguinte comando:
+<pre>
+wget -r --no-parent --html-extension --convert-links http://site.com
+</pre>
+<strong>Descrição dos parametros:</strong><br>
+-r = baixar recursivamente<br>
+--no-parent = não fazer download de links externos que estejam no site<br>
+--html-extension = salvar as páginas presentes no site em html<br>
+--convert-links = converter os links para os html acima sem endereço<br>

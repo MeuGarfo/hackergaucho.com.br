@@ -1,0 +1,4 @@
+Para exibir o Unix epoch no Linux execute o seguinte comando:
+<pre>
+date +%s
+</pre>
