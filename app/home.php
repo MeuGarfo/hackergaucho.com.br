@@ -10,7 +10,7 @@ foreach (scandir('../txt/blog') as $key => $post) {
 }
 $title='Hacker Gaucho';
 if($posts){
-    $content='<h1>Blog</h1>';
+    $content='<h1>Posts do blog</h1>';
     $content.='<ul>';
     require 'inc/mb_ucfirst.php';
     require 'inc/corrigir.php';

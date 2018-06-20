@@ -11,6 +11,11 @@
         <div class="r">
             <div class="g3"></div>
             <div class="g6 moz-reader-content">
+                <div class="center">
+                    <a href="/" title="Início">
+                        <img src="/logo96.png" alt="Hacker Gaucho">
+                    </a>
+                </div>
                 <?php print $content; ?>
             </div>
             <div class="g3"></div>

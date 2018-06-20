@@ -15,6 +15,7 @@
 .moz-reader-content h1 {
   font-size: 1.6em;
   line-height: 1.25em;
+  margin: 0;
 }
 
 .moz-reader-content h2 {
@@ -38,7 +39,7 @@
   color: #0095dd;
 }
 .moz-reader-content a:visited {
-  color: #c2e;
+  color: #ff6a22;
 }
 .moz-reader-content p,
 .moz-reader-content p,
