@@ -5,7 +5,7 @@ $categoria=segment(1);
 if(!segment(2) && $categoria=='home'){
     require '../app/home.php';
 }elseif(!segment(2) && $categoria=='blog'){
-    header('Location: /');    
+    header('Location: /');
 }elseif(segment(2)){
     $post=segment(2);
     $uriRAW='/'.$categoria.'/'.$post;
