@@ -7,7 +7,7 @@ if($categoria=='blog'){
     unset($content[0]);
     $content=implode(PHP_EOL,$content);
 }
-$categoriaUpper=mb_strtoupper($categoria);
+$categoriaFirst=mb_ucfirst($categoria);
 $post=mb_ucfirst($post);
 require 'inc/corrigir.php';
 $post=corrigir($post);
@@ -17,7 +17,7 @@ if($post){
     $string="<h1>{$post}</h1>";
     if(isset($data)){
         $string.='<small>';
-        $string.="<a href='/{$categoria}'>{$categoriaUpper}</a> &raquo; ";
+        $string.="<a href='/{$categoria}'>{$categoriaFirst}</a> &raquo; ";
         $string.=date('d.M.Y h:i:s A',$data);
         $string.='</small><hr>';
     }
