@@ -24,5 +24,5 @@ if($post){
     $content=corrigir($content);
     require 'layout.php';
 }else{
-
+    require '404.php';
 }
