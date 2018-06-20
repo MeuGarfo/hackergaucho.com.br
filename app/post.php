@@ -15,7 +15,7 @@ if($post){
     $string="<strong>{$categoria}</strong>";
     $string.="<h1>{$post}</h1>";
     if(isset($data)){
-        $string.='<p class="right"><small>'.date('d.M.Y h:i:s A',$data).'</small></p>';
+        $string.='<p><small>'.date('d.M.Y h:i:s A',$data).'</small></p>';
     }
     $content=$string.$content;
     require 'layout.php';

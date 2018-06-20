@@ -4,14 +4,18 @@
 function segment($integer=false){
     $string=$_SERVER["REQUEST_URI"];
     if($string=='/'){
-        return ['1'=>'home'];
+        if(is_numeric($integer) && $integer==1){
+            return 'home';
+        }else{
+            return ['1'=>'home'];
+        }
     }else{
         $array=explode('/',$string);
         $array=array_filter($array);
         foreach ($array as $key => $value) {
             $array[$key]=urldecode($value);
         }
-        if($integer){
+        if(is_numeric($integer)){
             if(isset($array[$integer])){
                 return $array[$integer];
             }else{
