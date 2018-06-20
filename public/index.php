@@ -2,9 +2,11 @@
 require 'inc/segment.php';
 require 'inc/slug.php';
 $categoria=segment(1);
-if($categoria=='home'){
+if(!segment(2) && $categoria=='home'){
     require '../app/home.php';
-}else{
+}elseif(!segment(2) && $categoria=='blog'){
+    header('Location: /');    
+}elseif(segment(2)){
     $post=segment(2);
     $uriRAW='/'.$categoria.'/'.$post;
     $uriSlug=slug($uriRAW);

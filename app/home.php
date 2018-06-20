@@ -13,11 +13,13 @@ if($posts){
     $content='<h1>Blog</h1>';
     $content.='<ul>';
     require 'inc/mb_ucfirst.php';
+    require 'inc/corrigir.php';
     ksort($posts);
     foreach ($posts as $data => $post) {
         $content.='<li>';
         $content.=date('d.M.Y',$data).'~ ';
-        $content.='<a href="/blog/'.$post.'">'.mb_ucfirst($post).'</a>';
+        $postCorrigido=corrigir($post);
+        $content.='<a href="/blog/'.$post.'">'.mb_ucfirst($postCorrigido).'</a>';
         $content.='</li>';
     }
     $content.='</ul>';
