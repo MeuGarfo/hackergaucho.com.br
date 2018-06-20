@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?php print $title; ?></title>
+    <meta name="viewport" content="width=device-width; user-scalable=0" />
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>

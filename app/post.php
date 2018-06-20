@@ -14,15 +14,17 @@ $post=corrigir($post);
 $title=$post;
 date_default_timezone_set('America/Sao_Paulo');
 if($post){
-    $string="<strong><a href='/{$categoria}'>{$categoriaUpper}</a></strong>";
-    $string.="<h1>{$post}</h1>";
+    $string="<h1>{$post}</h1>";
     if(isset($data)){
-        $string.='<p><small>'.date('d.M.Y h:i:s A',$data).'</small></p>';
+        $string.='<p><small>';
+        $string.="<a href='/{$categoria}'>{$categoriaUpper}</a> &raquo; ";
+        $string.=date('d.M.Y h:i:s A',$data);
+        $string.='</small></p><hr>';
     }
     $content=$string.$content;
     $content=mb_ucfirst($content);
     $content=corrigir($content);
-    $content.='<p class="center"><a href="/">Início</a></p>';
+    $content.='<hr><p class="center"><a href="/">Início</a></p>';
     require 'layout.php';
 }else{
     require '404.php';

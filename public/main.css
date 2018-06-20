@@ -21,13 +21,24 @@ body{
     color: #333333;
     background-color: #ffffff;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.6em;
 }
 button{
     cursor:pointer;
     display:block;
     margin:0.75em auto;
+}
+h1{
+font-size: 1.6em;
+
+line-height: 1.25em;
+
+width: 100%;
+
+margin: 30px 0;
+
+padding: 0;
 }
 input[type=email],input[type=password],input[type=text],select,textarea{
     display:block;
@@ -55,6 +66,9 @@ pre{
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+small{
+    font-size:0.75em;
 }
 /*fix by http://browserhacks.com*/
 @supports (-moz-appearance:meterbar) {
