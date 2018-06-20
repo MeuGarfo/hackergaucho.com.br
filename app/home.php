@@ -17,7 +17,7 @@ if($posts){
     ksort($posts);
     foreach ($posts as $data => $post) {
         $content.='<li>';
-        $content.=date('d.M.Y',$data).'~ ';
+        $content.=date('d.M.Y',$data).' ~ ';
         $postCorrigido=corrigir($post);
         $content.='<a href="/blog/'.$post.'">'.mb_ucfirst($postCorrigido).'</a>';
         $content.='</li>';
