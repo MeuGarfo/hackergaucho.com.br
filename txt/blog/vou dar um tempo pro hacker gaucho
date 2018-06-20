@@ -1,7 +1,7 @@
 1529416592
 <p>Vou dar um tempo pro Hacker Gaucho por três razões:</p>
 <ol>
-<li>Estou reescrevendo o blog do zero para me livrar do banco de dados e conseguir rodar de graça no google cloud</li>
+<li>Estou <a href="https://github.com/hackergaucho/hackergaucho.com.br" target="_blank">reescrevendo o blog do zero</a> para me livrar do banco de dados e conseguir rodar de graça no google cloud</li>
 <li>Quero evitar usar imagens na nova versão do blog para ocupar menos espaço no servidor e escrever posts mais rapidamente</li>
 <li>Quero começar em breve a trabalhar em um projeto alternativo de publicação de notícias</li>
 </ol>
