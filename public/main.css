@@ -17,6 +17,13 @@ a{
 a:hover{
     color:red;
 }
+body{
+    color: #333333;
+    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
 button{
     cursor:pointer;
     display:block;
