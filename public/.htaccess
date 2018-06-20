@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteBase /
 
 # hg antigo
-RewriteRule ^posts/(.*)$ http://hg.local/posts/$1 [L,R=301]
+RewriteRule ^posts/(.*)$ http://old.hackergaucho.com.br/posts/$1 [L,R=301]
 
 # tudo para o index
 RewriteRule ^index\.php$ - [L]
