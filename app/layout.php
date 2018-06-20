@@ -10,7 +10,7 @@
     <div class="c">
         <div class="r">
             <div class="g3"></div>
-            <div class="g6">
+            <div class="g6 moz-reader-content">
                 <?php print $content; ?>
             </div>
             <div class="g3"></div>
