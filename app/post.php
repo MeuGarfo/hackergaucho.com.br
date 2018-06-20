@@ -22,6 +22,7 @@ if($post){
     $content=$string.$content;
     $content=mb_ucfirst($content);
     $content=corrigir($content);
+    $content.='<p class="center"><a href="/">Início</a></p>';
     require 'layout.php';
 }else{
     require '404.php';
