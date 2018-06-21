@@ -19,6 +19,7 @@ if($posts){
         $content.='<li>';
         $content.=date('d.M.Y',$data).' ~ ';
         $postCorrigido=corrigir($post);
+        $post=slug($post);
         $content.='<a href="/blog/'.$post.'">'.mb_ucfirst($postCorrigido).'</a>';
         $content.='</li>';
     }
