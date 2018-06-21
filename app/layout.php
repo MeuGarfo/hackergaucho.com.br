@@ -22,7 +22,7 @@
             <div class="g3"></div>
             <div class="g6 moz-reader-content">
                 <div class="center">
-                    <a href="/" title="Início">
+                    <a href="/" title="Hacker Gaucho">
                         <img src="/logo96.png" alt="Hacker Gaucho">
                     </a>
                 </div>

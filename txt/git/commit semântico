@@ -2,6 +2,6 @@
 <ol>
 <li>"Mudei" (MAJOR): quando fizer mudanças incompatíveis na API</li>
 <li>"Adicionei" (MINOR): quando adicionar funcionalidades mantendo compatibilidade</li>
-<li>"Corrigi" (PATCH): quando corrigir falhas mantendo compatibilidade</li>
+<li>"Alterei" (PATCH): quando corrigir falhas mantendo compatibilidade</li>
 </ol>
 <p>Esse padrão ajuda bastante na hora de versionar o repositório.</p>
