@@ -1,4 +1,4 @@
-<p>Para criar mensagens de commit mais humanizadas e mesmo assim semânticamente relevantes siga o padrão <a href="https://semver.org/lang/pt-BR/" target="_blank">SemVer</a> usando 3 palavras chave como prefixo da mensagem:</p>
+<p>Para criar mensagens de commit mais humanizadas e semânticamente adequadas siga o padrão <a href="https://semver.org/lang/pt-BR/" target="_blank">SemVer</a> usando 3 palavras chave como prefixo da mensagem:</p>
 <ol>
 <li>"Mudei" (MAJOR): quando fizer mudanças incompatíveis na API</li>
 <li>"Adicionei" (MINOR): quando adicionar funcionalidades mantendo compatibilidade</li>
