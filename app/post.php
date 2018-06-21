@@ -24,7 +24,7 @@ if($post){
     $content=$string.$content;
     $content=mb_ucfirst($content);
     $content=corrigir($content);
-    $content.='<hr><div class="center"><a href="/">Início</a></div>';
+    $content.="<hr><div class='center'><a href='/{$categoria}'>{$categoriaFirst}</a></div>";
     require 'layout.php';
 }else{
     require '404.php';
