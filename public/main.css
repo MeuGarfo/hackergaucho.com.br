@@ -15,7 +15,7 @@
 .moz-reader-content h1 {
     font-size: 1.6em;
     line-height: 1.25em;
-    margin: 0 0 20px 0;
+    margin: 0 0 0.5em 0;
 }
 
 .moz-reader-content h2 {
@@ -51,8 +51,8 @@
 .moz-reader-content li,
 .moz-reader-content figure,
 .moz-reader-content .wp-caption {
-    margin: -10px -10px 20px -10px;
-    padding: 10px;
+    padding: 0.25em 0;
+    margin: 0;
     border-radius: 5px;
 }
 .moz-reader-content li {
@@ -92,7 +92,6 @@ ol {
 .moz-reader-content ul,
 .moz-reader-content ol {
     padding: 0;
-    margin-left:0.25em;
 }
 .moz-reader-content ul {
     padding-inline-start: 30px;
@@ -105,20 +104,21 @@ ol {
 .moz-reader-content pre{
     margin:0 auto;
     max-width: calc(100% - 20px);
+    padding: 10px;
 }
 .nav-horizontal{
     float:none;
-    margin-top: -1em;
+    margin-bottom: 0.5em;
     position:static;
 }
 .nav-horizontal ul{
-    margin:0;
     position:static;
     text-align:center;
 }
 .nav-horizontal li {
     float:none;
-    margin:0;
+    margin:0 0.5em 0 0;
+    padding: 0;
     position:static;
     display:inline-block;
 }

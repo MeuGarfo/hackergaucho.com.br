@@ -5,6 +5,7 @@ if (!function_exists('corrigir')) {
     function corrigir($str){
         $lista=[
             'cloudflare'=>'Cloudflare',
+            'Commit semântico'=>'Commit Semântico',
             'hacker gaucho'=>'Hacker Gaucho',
             'google cloud'=>'Google Cloud',
             'html'=>'HTML',
