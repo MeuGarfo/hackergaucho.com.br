@@ -1,4 +1,4 @@
-<p>Uma maneira interessante de proteger seu servidor é liberar o acesso ao site apenas para o <a href="https://www.cloudflare.com/ips/" target="_blank">ip range do Cloudflare</a>. Para fazer isso adicione o seguinte código ao seu .htaccess (o ::1 é o ipv6 de loopback):</p>
+<p>Uma maneira interessante de proteger seu servidor web é liberar o acesso público apenas para o <a href="https://www.cloudflare.com/ips/" target="_blank">ip range do Cloudflare</a>. Para fazer isso adicione o seguinte código ao seu .htaccess (o ::1 é o ipv6 de loopback):</p>
 <pre>
 Order Deny,Allow
 Deny from all
