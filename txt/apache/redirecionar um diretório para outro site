@@ -2,5 +2,5 @@ Para redirecionar um diretório local para outro site use o seguinte código:
 <pre>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^diretorio(.*)$ http://www.outrosite.com/$1 [L,R=301]
+RewriteRule ^diretorio(.*)$ http://www.outrosite.com/diretorio/$1 [L,R=301]
 </pre>
