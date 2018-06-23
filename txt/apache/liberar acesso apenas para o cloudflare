@@ -1,4 +1,4 @@
-<p>Uma maneira interessante de proteger seu servidor é liberar o acesso ao site apenas para o <a href="https://www.cloudflare.com/ips/" target="_blank">ip range do Cloudflare</a>. Para fazer isso adicione o seguinte código ao seu .htaccess:</p>
+<p>Uma maneira interessante de proteger seu servidor é liberar o acesso ao site apenas para o <a href="https://www.cloudflare.com/ips/" target="_blank">ip range do Cloudflare</a>. Para fazer isso adicione o seguinte código ao seu .htaccess (o ::1 é o ipv6 de loopback):</p>
 <pre>
 Order Deny,Allow
 Deny from all
@@ -18,4 +18,3 @@ Allow from 190.93.240.0/20
 Allow from 197.234.240.0/22
 Allow from 198.41.128.0/17
 </pre>
-<p>NOTA: O ip ::1 é o loopback IPV6 do Ubuntu usado para desenvolvimento.</p>

@@ -1,6 +1,7 @@
 <?php
 if(is_array($posts)){
-    $content='<h1 class="center">'.mb_ucfirst($categoria).'</h1>';
+    require 'corrigir.php';
+    $content='<h1 class="center">'.mb_ucfirst(corrigir($categoria)).'</h1>';
     $content.='<ul>';
     require 'mb_ucfirst.php';
     require 'corrigir.php';

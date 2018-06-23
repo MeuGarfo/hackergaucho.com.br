@@ -15,20 +15,16 @@ $title=$post;
 date_default_timezone_set('America/Sao_Paulo');
 if($post){
     $h1Title="<h1 class='center'>{$post}</h1>";
+    $string=null;
     if(isset($data)){
-        $string='<div class="center">';
-        $string.="<a href='/{$categoria}'>{$categoriaFirst}</a> &raquo; ";
+        $string.='<div class="center">';
         $string.=date('d.M.Y h:i:s A',$data);
         $string.='</div>';
-    }else{
-        $string='<div class="center">';
-        $string.="<a href='/{$categoria}'>{$categoriaFirst}</a>";
-        $string.='</div>';
     }
-    $content=$string.$h1Title.'<hr>'.$content;
+    $content=$h1Title.$string.'<hr>'.$content;
     $content=mb_ucfirst($content);
     $content=corrigir($content);
-    $content.='<hr>'.$string;
+    $content.='<hr>';
     require 'inc/layout.php';
 }else{
     require '404.php';

@@ -40,7 +40,11 @@ if(!segment(2) && $categoria=='home'){
     }
 }elseif($categoria){
     //CATEGORIA
-    require '../app/categoria.php';
+    if(file_exists('../txt/'.$categoria)){
+        require '../app/categoria.php';
+    }else{
+        require '../app/404.php';
+    }
 }else{
     require '../app/404.php';
 }

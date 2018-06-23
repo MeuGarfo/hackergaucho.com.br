@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php print $title; ?></title>
     <meta name="viewport" content="width=device-width; user-scalable=0" />
-    <link rel="stylesheet" href="/main.css?0.1.1">
+    <link rel="stylesheet" href="/main.css?0.1.2">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="file/logo180.png" sizes="180x180">
     <link rel="icon" href="/logo32.png" sizes="32x32" type="image/png">
@@ -26,6 +26,18 @@
                         <img src="/logo96.png" alt="Hacker Gaucho">
                     </a>
                 </div><!--center-->
+                <div class="nav-horizontal" id="nav-horizontal">
+                    <?php
+                    require 'categorias.php';
+                    if(@is_array($categorias)){
+                        print '<ul>';
+                        foreach ($categorias as $link => $categoria) {
+                            print '<li><a href="/'.$link.'">'.mb_ucfirst($categoria).'</a></li>';
+                        }
+                        print '</ul>';
+                    }
+                    ?>
+                </div>
                 <?php print $content; ?>
             </div><!--g6-->
             <div class="g3"></div><!--g3-->
