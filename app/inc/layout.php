@@ -30,7 +30,7 @@
                     <ul>
                         <li><a href="/">Blog</a></li>
                         <!-- <li><a href="/contato">Contato</a></li> -->
-                        <li><a href="https://www.reddit.com/r/HackerGaucho/" target="_blank">Reddit</a></li>
+                        <li><a href="https://old.reddit.com/r/HackerGaucho/" target="_blank">Reddit</a></li>
                         <li><a href="/sobre">Sobre</a></li>
                         <li><a href="https://old.hackergaucho.com.br" target="_blank">Versão antiga</a></li>
                     </ul>
