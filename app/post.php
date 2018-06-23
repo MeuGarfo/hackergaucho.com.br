@@ -16,16 +16,16 @@ date_default_timezone_set('America/Sao_Paulo');
 if($post){
     $h1Title="<h1 class='center'>{$post}</h1>";
     if(isset($data)){
-        $string='<div class="center"><small>';
+        $string='<div class="center">';
         $string.="<a href='/{$categoria}'>{$categoriaFirst}</a> &raquo; ";
         $string.=date('d.M.Y h:i:s A',$data);
-        $string.='</small></div>';
+        $string.='</div>';
     }else{
-        $string='<div class="center"><small>';
+        $string='<div class="center">';
         $string.="<a href='/{$categoria}'>{$categoriaFirst}</a>";
-        $string.='</small></div>';
+        $string.='</div>';
     }
-    $content=$h1Title.$string.'<hr>'.$content;
+    $content=$string.$h1Title.'<hr>'.$content;
     $content=mb_ucfirst($content);
     $content=corrigir($content);
     $content.='<hr>'.$string;
