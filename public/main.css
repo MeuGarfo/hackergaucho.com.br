@@ -38,9 +38,6 @@
 .moz-reader-content a:link:active {
     color: #0095dd;
 }
-/* .moz-reader-content a:visited {
-    color: #ff6a22;
-} */
 .moz-reader-content p,
 .moz-reader-content p,
 .moz-reader-content code,
@@ -128,11 +125,8 @@ ol {
 * {
     line-height:1.5em
 }
-a{
-    color:blue;
-}
 a:hover{
-    color:red;
+    color:#ff6a22;
 }
 body{
     color: #333333;
