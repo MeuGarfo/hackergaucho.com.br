@@ -87,6 +87,10 @@ ol {
     padding-inline-start: 30px;
     list-style: decimal;
 }
+.moz-reader-content p{
+    margin-bottom:1em;
+    text-align:justify;
+}
 .moz-reader-content pre{
     margin:0 auto;
     max-width: calc(100% - 20px);
