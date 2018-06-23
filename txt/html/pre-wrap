@@ -1,4 +1,4 @@
-Use o seguinte código para quebrar linhas:
+Use o seguinte código para quebrar as linhas do pre:
 <pre>
 pre {
  white-space: pre-wrap;       /* css-3 */
