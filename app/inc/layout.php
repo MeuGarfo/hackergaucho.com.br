@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php print $title; ?></title>
     <meta name="viewport" content="width=device-width; user-scalable=0" />
-    <link rel="stylesheet" href="/main.css?0.1.0">
+    <link rel="stylesheet" href="/main.css?0.1.1">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="file/logo180.png" sizes="180x180">
     <link rel="icon" href="/logo32.png" sizes="32x32" type="image/png">
@@ -19,18 +19,18 @@
 <body>
     <div class="c">
         <div class="r">
-            <div class="g3"></div>
+            <div class="g3"></div><!--g3-->
             <div class="g6 moz-reader-content">
                 <div class="center">
                     <a href="/" title="Hacker Gaucho">
                         <img src="/logo96.png" alt="Hacker Gaucho">
                     </a>
-                </div>
+                </div><!--center-->
                 <?php print $content; ?>
-            </div>
-            <div class="g3"></div>
-        </div>
-    </div>
+            </div><!--g6-->
+            <div class="g3"></div><!--g3-->
+        </div><!--r-->
+    </div><!--c-->
     <!-- Matomo -->
     <script type="text/javascript">
     var _paq = _paq || [];

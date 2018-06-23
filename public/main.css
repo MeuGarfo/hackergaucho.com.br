@@ -99,6 +99,10 @@
   padding-inline-start: 30px;
   list-style: decimal;
 }
+.moz-reader-content pre{
+    margin:0 auto;
+    max-width: calc(100% - 20px);
+}
 .right{
     text-align:right;
 }

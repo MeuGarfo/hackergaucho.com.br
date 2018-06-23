@@ -5,7 +5,7 @@ $content=<<<heredoc
 <p>Página não encontrada.</p>
 <p class="center"><a href="/">Início</a></p>
 heredoc;
-$filename='layout.php';
+$filename='inc/layout.php';
 header("HTTP/1.0 404 Not Found");
 require $filename;
 ?>

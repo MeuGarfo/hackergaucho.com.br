@@ -1,12 +1,25 @@
 <?php
+//ERROS
+if(@end(explode('.',$_SERVER['SERVER_NAME']))==='local'){
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+}else{
+    error_reporting(0);
+}
+//INCLUDES
 require 'inc/segment.php';
 require 'inc/slug.php';
+//ROTEAMENTO
 $categoria=segment(1);
 if(!segment(2) && $categoria=='home'){
+    //HOME
     require '../app/home.php';
 }elseif(!segment(2) && $categoria=='blog'){
+    //BLOG
     header('Location: /');
 }elseif(segment(2)){
+    //POST
     $post=segment(2);
     $uriRAW='/'.$categoria.'/'.$post;
     $uriSlug=slug($uriRAW);
@@ -25,4 +38,9 @@ if(!segment(2) && $categoria=='home'){
     }else{
         require '../app/404.php';
     }
+}elseif($categoria){
+    //CATEGORIA
+    require '../app/categoria.php';
+}else{
+    require '../app/404.php';
 }
