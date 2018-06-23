@@ -9,7 +9,11 @@ if (!function_exists('corrigir')) {
             'hacker gaucho'=>'Hacker Gaucho',
             'google cloud'=>'Google Cloud',
             'html'=>'HTML',
-            'php'=>'PHP'
+            'lamp'=>'LAMP',
+            'linux'=>'Linux',
+            'php'=>'PHP',
+            'wget'=>'Wget',
+            'unix'=>'Unix'
         ];
         foreach ($lista as $errado => $correto) {
             $str=str_ireplace($errado, $correto, $str);
