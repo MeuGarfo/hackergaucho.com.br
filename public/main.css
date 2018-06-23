@@ -90,6 +90,7 @@
 .moz-reader-content ul,
 .moz-reader-content ol {
   padding: 0;
+  margin-left:0.25em;
 }
 .moz-reader-content ul {
   padding-inline-start: 30px;
