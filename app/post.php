@@ -21,10 +21,9 @@ if($post){
         $string.=date('d.M.Y h:i:s A',$data);
         $string.='</div>';
     }
-    $content=$h1Title.$string.'<hr>'.mb_ucfirst($content);
+    $content=$h1Title.$string.mb_ucfirst($content);
     $content=mb_ucfirst($content);
     $content=corrigir($content);
-    $content.='<hr>';
     require 'inc/layout.php';
 }else{
     require '404.php';

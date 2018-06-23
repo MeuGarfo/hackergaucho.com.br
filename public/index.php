@@ -29,11 +29,7 @@ if(!segment(2) && $categoria=='home'){
     }
     $categoria=slug(segment(1),false);
     $post=slug(segment(2),false);
-    if($post){
-        $filename='../txt/'.$categoria.'/'.$post;
-    }else{
-        $filename='../txt/'.$categoria;
-    }
+    $filename='../txt/'.$categoria.'/'.$post.'.html';
     if(file_exists($filename)){
         require '../app/post.php';
     }else{
@@ -41,10 +37,17 @@ if(!segment(2) && $categoria=='home'){
     }
 }elseif($categoria){
     //CATEGORIA
-    if(file_exists('../txt/'.$categoria)){
-        require '../app/categoria.php';
-    }else{
-        require '../app/404.php';
+    switch($categoria){
+        case 'sobre':
+        require '../app/sobre.php';
+        break;
+        default:
+        if(file_exists('../txt/'.$categoria)){
+            require '../app/categoria.php';
+        }else{
+            require '../app/404.php';
+        }
+        break;
     }
 }else{
     require '../app/404.php';

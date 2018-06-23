@@ -27,17 +27,6 @@
     font-size: 1em;
     line-height: 1.66em;
 }
-
-.moz-reader-content a:link {
-    text-decoration: underline;
-    font-weight: normal;
-}
-.moz-reader-content a,
-.moz-reader-content a:link,
-.moz-reader-content a:link:hover,
-.moz-reader-content a:link:active {
-    color: #0095dd;
-}
 .moz-reader-content p,
 .moz-reader-content p,
 .moz-reader-content code,
@@ -124,6 +113,9 @@ ol {
 }
 * {
     line-height:1.5em
+}
+a{
+    color: #0095dd;
 }
 a:hover{
     color:#ff6a22;

@@ -11,6 +11,10 @@ if(is_array($posts)){
         if($categoria=='blog'){
             $content.=date('d.M.Y',$data).' ~ ';
         }
+        $post=explode('.',$post);
+        end($post);
+        unset($post[key($post)]);
+        $post=implode(".",$post);
         $postCorrigido=corrigir($post);
         $post=slug($post);
         $content.='<a href="/'.$categoria.'/'.$post.'">'.mb_ucfirst($postCorrigido).'</a>';

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php print $title; ?></title>
     <meta name="viewport" content="width=device-width; user-scalable=0" />
-    <link rel="stylesheet" href="/main.css?0.1.4">
+    <link rel="stylesheet" href="/main.css?0.1.5">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="file/logo180.png" sizes="180x180">
     <link rel="icon" href="/logo32.png" sizes="32x32" type="image/png">
@@ -26,11 +26,21 @@
                         <img src="/logo96.png" alt="Hacker Gaucho">
                     </a>
                 </div><!--center-->
-                <div class="nav-horizontal" id="nav-horizontal">
+                <div class="nav-horizontal">
+                    <ul>
+                        <li><a href="/">Blog</a></li>
+                        <!-- <li><a href="/contato">Contato</a></li> -->
+                        <li><a href="https://www.reddit.com/r/HackerGaucho/" target="_blank">Reddit</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="https://old.hackergaucho.com.br" target="_blank">Versão antiga</a></li>
+                    </ul>
+                </div>
+                <?php print $content; ?>
+                <div class="nav-horizontal">
                     <?php
                     require 'categorias.php';
                     if(@is_array($categorias)){
-                        print '<ul>';
+                        print '<hr><ul>';
                         foreach ($categorias as $link => $categoria) {
                             print '<li><a href="/'.$link.'">'.mb_ucfirst($categoria).'</a></li>';
                         }
@@ -38,7 +48,6 @@
                     }
                     ?>
                 </div>
-                <?php print $content; ?>
             </div><!--g6-->
             <div class="g3"></div><!--g3-->
         </div><!--r-->
@@ -61,11 +70,11 @@
             var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
             g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
         })();
-    </script>
-    <noscript><p><img src="//piwik.mushape.com/piwik.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Matomo Code -->
-    <?php
-}
-?>
+        </script>
+        <noscript><p><img src="//piwik.mushape.com/piwik.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+        <!-- End Matomo Code -->
+        <?php
+    }
+    ?>
 </body>
 </html>
