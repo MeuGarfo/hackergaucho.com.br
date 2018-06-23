@@ -24,6 +24,7 @@ if($post){
     $content=$h1Title.$string.mb_ucfirst($content);
     $content=mb_ucfirst($content);
     $content=corrigir($content);
+    $content.=file_get_contents(__DIR__.'/inc/disqus.php');
     require 'inc/layout.php';
 }else{
     require '404.php';
