@@ -1,7 +1,7 @@
 <hr>
 <h1 class="center">Comentários</h1>
 <div id="disqus_thread" class="center">
-    <a href="#" class="comments-holder" onclick="loadDisqus();return false;">Abrir comentários</a>
+    <a href="#" class="comments-holder" onclick="loadDisqus();return false;">Comentar</a>
 </div>
 <script>
 var disqus_shortname = "hackergaucho";
