@@ -19,8 +19,8 @@
 <body>
     <div class="c">
         <div class="r">
-            <div class="g3"></div><!--g3-->
-            <div class="g6 moz-reader-content">
+            <div class="g2"></div><!--g2-->
+            <div class="g8 moz-reader-content">
                 <div class="center">
                     <a href="/" title="Hacker Gaucho">
                         <img src="/logo96.png" alt="Hacker Gaucho">
@@ -48,8 +48,8 @@
                     }
                     ?>
                 </div>
-            </div><!--g6-->
-            <div class="g3"></div><!--g3-->
+            </div><!--g8-->
+            <div class="g2"></div><!--g2-->
         </div><!--r-->
     </div><!--c-->
     <?php
