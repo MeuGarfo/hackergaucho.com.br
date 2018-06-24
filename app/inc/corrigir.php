@@ -9,6 +9,8 @@ if (!function_exists('corrigir')) {
             'hacker gaucho'=>'Hacker Gaucho',
             'google cloud'=>'Google Cloud',
             'html'=>'HTML',
+            '.html'=>'.html',
+            '.HTML'=>'.HTML',
             'lamp'=>'LAMP',
             'linux'=>'Linux',
             'php'=>'PHP',
